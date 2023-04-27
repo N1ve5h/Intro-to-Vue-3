@@ -10,15 +10,12 @@
   </head>
   <body>
     <div id="app">
-      <div class="nav-bar">
-        <a :href="google">Google</a>
-      </div>
-
+      <div class="nav-bar"></div>
+      
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
-            <img :src="image">
+            <img v-bind:src="image">
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
